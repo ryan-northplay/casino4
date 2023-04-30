@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Saira+Extra+Condensed:wght@400;500;700;800&display=swap");
 body {
   background-image: url(../pic/fone.jpg);
@@ -474,4 +475,160 @@ nav .container {
   font-size: 13px;
   padding: 0;
   margin: auto 0;
+}
+
+.dnone {
+  display: none;
+}
+
+.login {
+  z-index: 10;
+  height: 100vh;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  background: rgba(20, 199, 255, 0.57);
+  -webkit-backdrop-filter: blur(4.5px);
+          backdrop-filter: blur(4.5px);
+  width: 100%;
+  padding: 0px 10px;
+}
+.login .form {
+  padding: 22px 48px 22px;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 9vh;
+  background: rgba(2, 12, 22, 0.62);
+  border: 4px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 450px) {
+  .login .form {
+    padding: 20px 15px 50px;
+  }
+}
+.login .form div {
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.login .form input:not([type=checkbox]) {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  width: 93%;
+  padding: 20px 30px;
+  border-radius: 16px;
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.2);
+  outline: none;
+  border: none;
+}
+.login .form label {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: left;
+}
+.login .form button {
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+  border: 2px solid white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 80px;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.login .form button:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px white;
+}
+.login .form img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+}
+.login .form img:hover {
+  cursor: pointer;
+  opacity: 50%;
+  transition: 0.3s;
+}
+
+.registration .form {
+  margin-top: 10vh;
+}
+.registration .form div {
+  margin-bottom: 0;
+}
+.registration .form .title {
+  margin-bottom: 10px;
+}
+.registration .form .input_flex {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.registration .form .input_wrapper {
+  width: 48%;
+  margin-bottom: 0;
+  margin: 0;
+  text-align: left;
+}
+@media (max-width: 700px) {
+  .registration .form .input_wrapper {
+    width: 100%;
+  }
+}
+.registration .form .input_wrapper label {
+  margin: 0;
+}
+.registration .form input:not([type=checkbox]) {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 80%;
+}
+@media (max-width: 700px) {
+  .registration .form input:not([type=checkbox]) {
+    padding: 10px 20px;
+  }
+}
+.registration .form .check_label {
+  font-weight: 400;
+  font-size: 24px;
+}
+@media (max-width: 700px) {
+  .registration .form .check_label {
+    font-size: 18px;
+  }
+}
+.registration .form .check_wrapper {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: left;
+}
+.registration .form input[type=checkbox] {
+  opacity: 0;
+}
+.registration .form input[type=checkbox] ~ label::before {
+  text-align: center;
+  color: transparent;
+  line-height: 30px;
+  height: 30px;
+  border: 3px solid white;
+  width: 30px;
+  content: "✓";
+  border-radius: 16px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.registration .form input[type=checkbox]:checked ~ label::before {
+  color: white;
 }

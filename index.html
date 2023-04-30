@@ -10,6 +10,57 @@
 </head>
 
 <body>
+    <div id="login_form" class="login dnone">
+        <div class="form">
+            <form>
+                <img src="pic/cross.svg" id="login_cross">
+                <div class="title">LOGIN</div>
+                <label for="email">Email:</label>
+                <input id="email" type="text" name="email">
+                <label for="password">Password:</label>
+                <input id="password" type="password" name="password">
+                <div>
+                    <button>Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="registration_form" class="login registration dnone">
+        <div class="form">
+            <form>
+                <img src="pic/cross.svg" id="registration_cross">
+                <div class="title">REGISTER</div>
+                <div class="input_flex">
+                    <div class="input_wrapper">
+                        <label for="email">Email:</label>
+                        <input id="email" type="text" name="email">
+                    </div>
+                    <div class="input_wrapper">
+                        <label for="password">Password:</label>
+                        <input id="password" type="password" name="password">
+                    </div>
+                    <div class="input_wrapper">
+                        <label for="rpassword">Repeat password:</label>
+                        <input id="rpassword" type="password" name="rpassword">
+                    </div>
+                </div>
+
+                <div class="check_wrapper">
+                    <input id="checklorem" type="checkbox" name="checklorem">
+                    <label for="checklorem" class="check_label">Lorem Ipsum</label>
+                </div>
+                <div class="check_wrapper">
+                    <input id="checklorem2" type="checkbox" name="checklorem">
+                    <label for="checklorem2" class="check_label">Lorem Ipsum</label>
+                </div>
+                <div>
+                    <button>Registration</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
     <nav>
         <div class="container">
             <div class="logo">
@@ -18,10 +69,10 @@
                 </a>
             </div>
             <div class="log_reg">
-                <button>
+                <button id="login_btn">
                     Login
                 </button>
-                <button>
+                <button id="registration_btn">
                     Registration
                 </button>
             </div>
@@ -144,6 +195,7 @@
             </p>
         </div>
     </div>
+    <script src="js/btns.js"></script>
 
 </body>
 
