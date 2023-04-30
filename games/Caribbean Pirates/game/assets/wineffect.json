@@ -1,0 +1,172 @@
+{"frames": {
+
+"win_effect_00.png":
+{
+	"frame": {"x":801,"y":1171,"w":3,"h":3},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
+	"sourceSize": {"w":280,"h":246}
+},
+"win_effect_01.png":
+{
+	"frame": {"x":1,"y":1,"w":266,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":7,"w":266,"h":232},
+	"sourceSize": {"w":280,"h":246}
+},
+"win_effect_02.png":
+{
+	"frame": {"x":269,"y":1,"w":266,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":7,"w":266,"h":232},
+	"sourceSize": {"w":280,"h":246}
+},
+"win_effect_03.png":
+{
+	"frame": {"x":537,"y":1,"w":266,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":7,"w":266,"h":232},
+	"sourceSize": {"w":280,"h":246}
+},
+"win_effect_04.png":
+{
+	"frame": {"x":1,"y":235,"w":266,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":7,"w":266,"h":232},
+	"sourceSize": {"w":280,"h":246}
+},
+"win_effect_05.png":
+{
+	"frame": {"x":269,"y":235,"w":266,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":7,"w":266,"h":232},
+	"sourceSize": {"w":280,"h":246}
+},
+"win_effect_06.png":
+{
+	"frame": {"x":537,"y":235,"w":266,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":7,"w":266,"h":232},
+	"sourceSize": {"w":280,"h":246}
+},
+"win_effect_07.png":
+{
+	"frame": {"x":1,"y":469,"w":266,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":7,"w":266,"h":232},
+	"sourceSize": {"w":280,"h":246}
+},
+"win_effect_08.png":
+{
+	"frame": {"x":537,"y":1171,"w":262,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":7,"w":262,"h":232},
+	"sourceSize": {"w":280,"h":246}
+},
+"win_effect_09.png":
+{
+	"frame": {"x":269,"y":469,"w":266,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":7,"w":266,"h":232},
+	"sourceSize": {"w":280,"h":246}
+},
+"win_effect_10.png":
+{
+	"frame": {"x":537,"y":469,"w":266,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":7,"w":266,"h":232},
+	"sourceSize": {"w":280,"h":246}
+},
+"win_effect_11.png":
+{
+	"frame": {"x":1,"y":703,"w":266,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":7,"w":266,"h":232},
+	"sourceSize": {"w":280,"h":246}
+},
+"win_effect_12.png":
+{
+	"frame": {"x":1,"y":937,"w":266,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":7,"w":266,"h":232},
+	"sourceSize": {"w":280,"h":246}
+},
+"win_effect_13.png":
+{
+	"frame": {"x":1,"y":1171,"w":266,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":7,"w":266,"h":232},
+	"sourceSize": {"w":280,"h":246}
+},
+"win_effect_14.png":
+{
+	"frame": {"x":269,"y":703,"w":266,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":7,"w":266,"h":232},
+	"sourceSize": {"w":280,"h":246}
+},
+"win_effect_15.png":
+{
+	"frame": {"x":537,"y":703,"w":266,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":7,"w":266,"h":232},
+	"sourceSize": {"w":280,"h":246}
+},
+"win_effect_16.png":
+{
+	"frame": {"x":269,"y":937,"w":266,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":7,"w":266,"h":232},
+	"sourceSize": {"w":280,"h":246}
+},
+"win_effect_17.png":
+{
+	"frame": {"x":269,"y":1171,"w":266,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":7,"w":266,"h":232},
+	"sourceSize": {"w":280,"h":246}
+},
+"win_effect_18.png":
+{
+	"frame": {"x":537,"y":937,"w":266,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":7,"w":266,"h":232},
+	"sourceSize": {"w":280,"h":246}
+},
+"win_effect_19.png":
+{
+	"frame": {"x":801,"y":1171,"w":3,"h":3},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
+	"sourceSize": {"w":280,"h":246}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "wineffect.png",
+	"format": "RGBA5555",
+	"size": {"w":805,"h":1404},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:2455fb4d3fc0991d1dd54b52bca6b33b:44c034f73df49d8642fc8a8515d8f11f:daab8125afda11c54c8a1bbd02ab9670$"
+}
+}

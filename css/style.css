@@ -632,3 +632,102 @@ nav .container {
 .registration .form input[type=checkbox]:checked ~ label::before {
   color: white;
 }
+
+.games {
+  margin-top: 30px;
+}
+.games .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.games .container .game {
+  width: 31%;
+  padding: 20px 50px;
+  background: rgba(1, 22, 41, 0.45);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(11px);
+          backdrop-filter: blur(11px);
+}
+@media (max-width: 1230px) {
+  .games .container .game {
+    padding: 20px 20px;
+  }
+}
+@media (max-width: 700px) {
+  .games .container .game {
+    width: 100%;
+  }
+}
+.games .container .game img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+.games .container .game button {
+  padding: 10px 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .games .container .game button {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+.games .container .game button:hover {
+  text-shadow: 0px 0px 0px black;
+  box-shadow: 0px 0px 10px 5px white;
+}
+
+#game_popup {
+  transition: 0.3s;
+  z-index: 10;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(20, 199, 255, 0.57);
+  -webkit-backdrop-filter: blur(4.5px);
+          backdrop-filter: blur(4.5px);
+  width: 100%;
+  height: 100vh;
+  padding: 0px 15px;
+}
+#game_popup .game_popup_inner {
+  padding: 20px 50px 20px;
+  background: rgba(2, 12, 22, 0.62);
+  border: 4px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 10vh;
+  height: 70vh;
+}
+@media (max-width: 550px) {
+  #game_popup .game_popup_inner {
+    padding: 20px 20px 20px;
+  }
+}
+#game_popup .game_popup_inner img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+}
+#game_popup .game_popup_inner img:hover {
+  cursor: pointer;
+  opacity: 50%;
+  transition: 0.3s;
+}
+#game_popup .game_popup_inner iframe {
+  margin-top: 20px;
+  width: 100%;
+  height: 85%;
+}
+#game_popup .game_popup_inner #game_name {
+  font-size: 30px;
+  font-weight: 700;
+}

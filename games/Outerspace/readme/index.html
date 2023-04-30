@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <title>Slot Machine - Outerspace</title>
+        <!-- Framework CSS -->
+        <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+        <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+        <link rel="stylesheet" href="styles/shCore.css" type="text/css" >
+        <link rel="stylesheet" href="styles/shCoreDefault.css" type="text/css" >
+        <link rel="stylesheet" href="styles/shThemeDefault.css" type="text/css" >
+        <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+        <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+        <style type="text/css" media="screen">
+            p, table, hr, .box { margin-bottom:25px; }
+            .box p { margin-bottom:10px; }
+        </style>
+        <script type="text/javascript" src="scripts/shCore.js"></script>
+        <script type="text/javascript" src="scripts/shBrushJScript.js"></script>
+        <script type="text/javascript" src="scripts/shBrushXml.js"></script>
+    </head>
+    <body>
+        <div class="container">
+
+            <h3 class="center alt">&ldquo;Slot Machine - Outerspace&rdquo; Documentation by &ldquo;All-Scripts&rdquo; v1.0</h3>
+
+            <hr>
+
+            <h1 class="center">&ldquo;Slot Machine - Outerspace&rdquo;</h1>
+            <div class="borderTop">
+                <div class="span-6 colborder info prepend-1">
+                    <p class="prepend-top">
+                        <strong>
+                            Created: 16/05/2018<br>
+                            By: <a href="https://www.all-scripts.de">All-Scripts</a><br>
+                            Email: <a href="mailto:info@all-scripts.de">info@all-scripts.de</a>
+                        </strong>
+                    </p>
+                </div><!-- end div .span-6 -->
+                <div class="span-12 last">
+                    <p class="prepend-top append-0">
+                        Thank you for purchasing our game. If you have any questions that are beyond the scope of this help file, please feel free to email via user page
+                        contact form <a href="http://themeforest.net/user/all-scripts">here</a>. Thanks so much!
+                    </p>
+                </div>
+            </div><!-- end div .borderTop -->
+
+            <hr>
+
+            <h2 id="toc" class="alt">Table of Contents</h2>
+            <ol class="alpha">
+                <li><a href="#description">Description</a></li>
+                <li><a href="#started">Getting Started</a></li>
+                <li><a href="#cssFiles">CSS Files</a></li>
+                <li><a href="#filetree">Filetree</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li><a href="#update">Update Log</a></li>
+            </ol>
+
+            <hr>
+
+            <h3 id="description"><strong>A) Description</strong> - <a href="#toc">top</a></h3>
+            <p>
+                The Outerspace is a HTML5 casino game.<br/>
+                This game has been developed in HTML5 / JavaScript and third-party library phaser - <a href="http://phaser.io/">http://phaser.io/</a><br/>
+                <br/>
+                Features:<br/>
+                &bull; Audio / Music on off<br/>
+                &bull; Fullscreen<br/>
+                &bull; Multilanguage can choose in the settings (English / German / Spanish)<br/>
+                &bull; Autoplay<br/>
+                &bull; Freegames<br/>
+                &bull; 13 Winlines<br/>
+                &bull; All symbols animated<br/>
+                &bull; Jackpot<br/>
+                <br/>
+                The ZIP package contains the game with 1920 x 1080 resolution that scales to fit the current screen device.<br/>
+                The game is fully compatible with all most common mobile devices.<br/>
+            </p>
+
+            <hr>
+
+            <h3 id="started"><strong>B) Getting Started</strong> - <a href="#toc">top</a></h3>
+            <p>
+                To install the game just upload on your server the game folder game.
+                <ul>
+                    <li><strong>Game Resize:</strong> All game resolution automatically center itself and fits on the screen.
+                    If you want to avoid this, you can change this in <strong>index.html</strong> file</li>
+
+                    <pre class="brush: js">
+						<div id="game"> </div>
+                    </pre>
+                    to this (with the size you like):<br>
+                    <pre class="brush: js">
+						<div id="game" style="width: 800px; height: 700px;"> </div>
+                    </pre>
+
+                    <li><strong>insert game in a existing page:</strong> Do you want insert the game in an existing page</li>
+
+                    <pre class="brush: js">
+						<script src="PATH_TO_THE_GAME/lib/jquery.min.js" type="text/javascript"></script>
+                        <script src="PATH_TO_THE_GAME/lib/jstorage.js" type="text/javascript"></script>
+                        <script src="PATH_TO_THE_GAME/lib/phaser.min.js" type="text/javascript"></script>
+                        <script src="PATH_TO_THE_GAME/src/config.js" type="text/javascript"></script>
+                        <script src="PATH_TO_THE_GAME/src/game.js" type="text/javascript"></script>
+                        <div id="game"> </div>
+                    </pre>
+
+                    And you need declare the GAME_PATH in the configuration file like this:
+
+                    <pre class="brush: js">
+                    	var GAME_PATH = 'PATH_TO_THE_GAME/';
+                    </pre>
+
+                    <li><strong>Game option:</strong> You can easily customize game setting in <strong>src/config.js</strong> file.</li>
+                    <pre class="brush: js">
+                        var DEBUGMODE = false;
+
+                        var GAME_PATH = ''; // Only need when you want load the game outside the folder
+
+                        var BETS = [10,20,30,40,50,70,80,90,100,150,200,300,500]; // Number and amount of bets
+                        var BET_POS = 0; // The Bet pos of BETS when the game start.
+                        var BET = BETS[BET_POS];
+
+                        var BEGIN_CREDITS = 1000; // Startcredits of the Player
+                        var BEGIN_JACKPOT = 5000; // Begin from the Jackpot
+                        var DECIMAL = 0;
+
+                        var CHANCES = [
+                            {sym: 1, count: 9},
+                            {sym: 2, count: 11},
+                            {sym: 3, count: 13},
+                            {sym: 4, count: 16},
+                            {sym: 5, count: 23},
+                            {sym: 6, count: 21},
+                            {sym: 7, count: 19},
+                            {sym: 8, count: 12},
+                            {sym: 9, count: 8},
+                            {sym: 10, count: 3},
+                        ];
+
+                        var PUSHER = [
+                            {sym: 1, chance: 250, percent: 50},
+                            {sym: 2, chance: 250, percent: 50},
+                            {sym: 3, chance: 500, percent: 60},
+                            {sym: 4, chance: 500, percent: 60},
+                            {sym: 5, chance: 1000, percent: 70},
+                            {sym: 6, chance: 2500, percent: 80},
+                            {sym: 7, chance: 5000, percent: 90},
+                            {sym: 8, chance: 2000, percent: 50},
+                            {sym: 9, chance: 1000, percent: 50},
+                            {sym: 10, chance: 100, percent: 1}
+                        ];
+
+                        var SYM_FAKTORS = [ // Symbol Faktors Bet * Faktor = Win
+                            {sym: 1, match_3: 1, match_4: 1.5, match_5: 2},
+                            {sym: 2, match_3: 1, match_4: 1.5, match_5: 2},
+                            {sym: 3, match_3: 2, match_4: 3, match_5: 4},
+                            {sym: 4, match_3: 3, match_4: 4, match_5: 5},
+                            {sym: 5, match_3: 4, match_4: 5, match_5: 6},
+                            {sym: 6, match_3: 5, match_4: 6, match_5: 7},
+                            {sym: 7, match_3: 6, match_4: 7, match_5: 8},
+                            {sym: 8, match_3: 7, match_4: 8, match_5: 9},
+                            {sym: 9, match_3: 15}
+                        ];
+                    </pre>
+                </ul>
+            </p>
+
+            <hr>
+
+            <h3 id="cssFiles"><strong>C) CSS Files</strong> - <a href="#toc">top</a></h3>
+            <p>
+                We using two CSS files in this Game.The first one is a generic reset file. Many browser interpret the default behavior of html elements differently.
+                By using a general reset CSS file, we can work round this. This file also contains some general styling, such as anchor tag colors, font-sizes, etc. Keep in mind,
+                that these values might be overridden somewhere else in the file.<br/>
+                <br/>
+                The second file contains the background color of the page and maybe for future updates.<br/>
+            </p>
+
+            <hr>
+
+            <h3 id="filetree"><strong>D) Filetree</strong> - <a href="#toc">top</a></h3>
+            <p>
+            	<ul>
+                    <li>assets
+                        <ul>
+                            <li>audio
+                                <ul>
+                                    <li>bg.mp3</li>
+                                    <li>bg.ogg</li>
+                                    <li>wheel_start.mp3</li>
+                                    <li>wheel_start.ogg</li>
+                                    <li>wheel_stop.mp3</li>
+                                    <li>wheel_stop.ogg</li>
+                                    <li>win_freegames.mp3</li>
+                                    <li>win_freegames.ogg</li>
+                                    <li>win_jackpot.mp3</li>
+                                    <li>win_jackpot.ogg</li>
+                                    <li>win_normal.mp3</li>
+                                    <li>win_normal.ogg</li>
+                                </ul>
+                            </li>
+                            <li>animation.json</li>
+                            <li>animation.png</li>                            
+                            <li>basis_high.json</li>
+                            <li>basis_high.png</li>
+                            <li>bg1.png</li>
+                            <li>bg2.png</li>
+                            <li>bg3.png</li>
+                            <li>bg4.png</li>
+                            <li>loading.png</li>
+                            <li>symbols.json</li>
+                            <li>symbols.png</li>
+                        </ul>
+                    </li>
+                    <li>css
+                    	<ul>
+                    		<li>reset.css</li>
+                    		<li>style.css</li>
+                    	</ul>
+                    </li>
+                    <li>icon
+                    	<ul>
+                    		<li>app_icon_32x32.png</li>
+                    		<li>app_icon_64x64.png</li>
+                    		<li>app_icon_128x128.png</li>
+                    		<li>app_icon_256x256.png</li>
+                    	</ul>
+                    </li>
+                    <li>lib
+                    	<ul>
+                    		<li>jquery.min.js</li>
+                    		<li>jstorage.js</li>
+                    		<li>phaser.map</li>
+                    		<li>phaser.min.js</li>
+                    	</ul>
+                    </li>
+                    <li>src
+                    	<ul>
+                    		<li>config.js</li>
+                    		<li>game.js</li>
+                    	</ul>
+                    </li>
+                    <li>index.html</li>
+                    <li>manifest.json</li>
+                </ul>
+            </p>
+
+            <hr>
+
+            <h3 id="javascript"><strong>E) JavaScript</strong> - <a href="#toc">top</a></h3>
+            <p>This game contains five JavaScript files.</p>
+            <ol>
+                <li>jQuery - lib/jquery.min.js</li>
+                <li>jStorage v0.4.12 - lib/jstorage.js</li>
+                <li>Phaser v2.10 - lib/phaser.min.js</li>
+                <li>Configuration File - src/config.js</li>
+                <li>Our custom script - src/game.js</li>
+            </ol>
+            <ol>
+                <li>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
+                <li>jStorage is a cross-browser key-value store database to store data locally in the browser - jStorage supports all major browsers, both in desktop (yes - even Internet Explorer 6) and in mobile.</li>
+                <li>Phaser is an open source HTML5 game framework created by Photon Storm. It's designed to create games that will run on desktop and mobile web browsers.</li>
+                <li>In The configuration file you can change debugmode (so developers get a console output), bets, jackpot, chances and many more.</li>
+                <li>The Game</li>
+            </ol>
+
+            <hr>
+
+            <h3 id="update"><strong>F) Update log</strong> - <a href="#toc">top</a></h3>
+            <p>no changes</p>
+
+            <hr>
+
+            <p>
+                Once again, thank you so much for purchasing this game. Fell free to contact us if you have any questions or issue relating to this game. No guarantees, but we'll do our best to assist.
+            </p>
+            <p class="append-bottom alt large"><strong><a href="https://www.all-scripts.de">All-Scripts</a></strong></p>
+            <p><a href="#toc">Go To Table of Contents</a></p>
+
+            <hr class="space">
+		</div><!-- end div .container -->
+
+        <script type="text/javascript">
+             SyntaxHighlighter.all()
+        </script>
+	</body>
+</html>

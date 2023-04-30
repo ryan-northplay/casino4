@@ -14,15 +14,15 @@ document.getElementById('registration_btn').onclick = function () {
 
 
 
-// document.getElementById('game_cross').onclick = function () {
-//     document.getElementById('game_popup').classList.add('dnone');
-//     document.getElementById('iframe').src = "";
-// }
-// document.getElementById('play_bj').onclick = function () {
-//     document.getElementById('game_popup').classList.remove('dnone');
-//     document.getElementById('iframe').src = "./games/BlackJack21/html5-files/index.html";
-//     document.getElementById('game_name').innerHTML = 'Black Jack';
-// }
+document.getElementById('game_cross').onclick = function () {
+    document.getElementById('game_popup').classList.add('dnone');
+    document.getElementById('iframe').src = "";
+}
+document.getElementById('bj').onclick = function () {
+    document.getElementById('game_popup').classList.remove('dnone');
+    document.getElementById('iframe').src = "./games/BlackJack21/html5-files/index.html";
+    document.getElementById('game_name').innerHTML = 'Black Jack';
+}
 // document.getElementById('wheeloffortune').onclick = function () {
 //     document.getElementById('game_popup').classList.remove('dnone');
 //     document.getElementById('iframe').src = "./games/game4/main_file/HTML5 - Wheel of Fortune/index.html";

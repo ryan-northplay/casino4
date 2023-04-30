@@ -474,3 +474,75 @@ nav
 
         input[type="checkbox"]:checked ~ label::before
             color: white
+
+.games
+    margin-top: 30px
+    .container
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        .game
+            width: 31%
+            padding: 20px 50px
+            background: rgba(1, 22, 41, 0.45)
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            backdrop-filter: blur(11px)
+            @media (max-width: 1230px)
+                padding: 20px 20px
+            @media (max-width: 700px)
+                width: 100%
+
+            img
+                object-fit: cover
+                width: 100%
+                height: 300px
+            button
+                padding: 10px 10px
+                margin-top: 20px
+                width: 100%
+                @media (max-width: 600px)
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            button:hover
+                text-shadow: 0px 0px 0px black
+                box-shadow: 0px 0px 10px 5px white
+#game_popup
+    transition: .3s
+    z-index: 10
+    position: fixed
+    top: 0px
+    left: 0px
+    background: rgba(20, 199, 255, 0.57)
+    backdrop-filter: blur(4.5px)
+    width: 100%
+    height: 100vh
+    padding: 0px 15px
+    .game_popup_inner
+        padding: 20px 50px 20px
+        background: rgba(2, 12, 22, 0.62)
+        border: 4px solid #FFFFFF
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        width: 100%
+        max-width: 900px
+        margin: auto
+        margin-top: 10vh
+        height: 70vh
+        @media (max-width: 550px)
+            padding: 20px 20px 20px
+        img
+            position: absolute
+            top: 20px
+            right: 20px
+            width: 50px
+            height: 50px
+            transition: .3s
+        img:hover
+            cursor: pointer
+            opacity: 50%
+            transition: .3s
+        iframe
+            margin-top: 20px
+            width: 100%
+            height: 85%
+        #game_name
+            font-size: 30px
+            font-weight: 700

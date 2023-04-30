@@ -1,0 +1,1 @@
+drag and drop the file named " spritefontplus.c2addon " in the open window of the construct2 program, confirm the installation. after installation, open the game project.
