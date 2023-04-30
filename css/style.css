@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Saira+Extra+Condensed:wght@400;500;700;800&display=swap");
+body {
+  background-image: url(../pic/fone.jpg);
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Saira Extra Condensed";
+}
+
+body {
+  line-height: 1;
+}
+
+.container {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 32px 0px;
+}
+nav .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 30%;
+}
+.logo img {
+  transition: 0.3s;
+}
+.logo img:hover {
+  filter: drop-shadow(0px 0px 5px white);
+}
+
+.log_reg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  width: 70%;
+}
+.log_reg button {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  background-color: transparent;
+  padding: 0px 60px;
+  border: 2px solid rgb(108, 108, 108);
+  border-radius: 10px;
+  text-shadow: 0px 0px 10px black;
+  transition: 0.3s;
+}
+.log_reg button:last-child {
+  background-color: rgb(20, 199, 255);
+  border: 2px solid rgb(20, 199, 255);
+}
+.log_reg button:hover {
+  color: black;
+  background-color: white;
+  text-shadow: 0px 0px 0px black;
+  border: 2px solid white;
+  box-shadow: 0px 0px 10px 5px white;
+  cursor: pointer;
+}
+
+.play_btn {
+  color: white;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 31px;
+  background-color: rgb(20, 199, 255);
+  padding: 10px 102px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  text-shadow: 0px 0px 10px black;
+  transition: 0.3s;
+}
+
+.play_btn:hover {
+  color: black;
+  background-color: white;
+  text-shadow: 0px 0px 0px black;
+  box-shadow: 0px 0px 10px 5px white;
+  cursor: pointer;
+}
+
+.uniq_sell_prop .container_inner {
+  width: 60%;
+  text-align: center;
+}
+.uniq_sell_prop .container_inner h1 {
+  font-weight: 800;
+  font-size: 86px;
+  line-height: 86px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.uniq_sell_prop .container_inner h1 .marked {
+  color: rgb(20, 199, 255);
+}
+.uniq_sell_prop .container_inner h2 {
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 52px;
+}
+.uniq_sell_prop .container_inner p {
+  width: 70%;
+  margin: 0px auto;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+.uniq_sell_prop .container_inner button {
+  margin-top: 30px;
+}
+.uniq_sell_prop .container_inner .p18 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.uniq_sell_prop .container_inner .p18 img {
+  color: white;
+}
+.uniq_sell_prop .container_inner .p18 p {
+  margin: 0;
+  width: auto;
+  margin: auto 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.information {
+  margin-top: 50px;
+  background-color: rgba(63, 90, 185, 0.56);
+  padding: 60px 0px;
+}
+.information p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
