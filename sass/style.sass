@@ -2,6 +2,9 @@
 
 body
     background-image: url(../pic/fone.jpg)
+    background-position: center
+    background-size: cover
+    line-height: 1
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section
@@ -29,13 +32,15 @@ time, mark, audio, video, button
     box-sizing: border-box
     color: white
     font-family: 'Saira Extra Condensed'
-body
-    line-height: 1
 
 .container
     width: 1150px
     margin: 0 auto
-
+    @media (max-width: 1230px)
+        width: 900px
+    @media (max-width: 950px)
+        padding: 0px 15px
+        width: 100%
 nav
     padding: 32px 0px
     .container
@@ -44,6 +49,10 @@ nav
         justify-content: space-between
 .logo
     width: 30%
+    @media (max-width: 700px)
+        text-align: center
+        width: 100%
+
     img
         transition: .3s
     img:hover
@@ -55,6 +64,11 @@ nav
     justify-content: right
     column-gap: 32px
     width: 70%
+    @media (max-width: 700px)
+        padding-top: 20px
+        width: 100%
+        justify-content: center
+
     button
         font-weight: 700
         font-size: 24px
@@ -65,6 +79,11 @@ nav
         border-radius: 10px
         text-shadow: 0px 0px 10px black
         transition: .3s
+        height: 50px
+        margin: auto 0
+        @media (max-width: 500px)
+            width: 100%
+            margin-bottom: 10px
     button:last-child
         background-color: rgba(20, 199, 255, 1)
         border: 2px solid rgba(20, 199, 255, 1)
@@ -86,6 +105,8 @@ nav
     border-radius: 8px
     text-shadow: 0px 0px 10px black
     transition: .3s
+    @media (max-width: 600px)
+        box-shadow: 0px 0px 50px 20px rgba(20, 199, 255, 1), 0px 4px 4px rgba(0, 0, 0, 0.25)
 
 .play_btn:hover
     color: black
@@ -95,9 +116,65 @@ nav
     cursor: pointer
 
 .uniq_sell_prop
+    margin-top: 40px
+    .flag
+        width: 0px
+        height: 0px
+        position: relative
+        top: -495px
+        right: -29%
+        z-index: 0
+        @media (max-width: 1230px)
+            top: -460px
+        @media (max-width: 950px)
+            position: absolute
+            left: 16px
+            top: 168px
+        @media (max-width: 700px)
+            left: 10%
+            top: 30px
+            img
+                width: 55px
+        @media (max-width: 400px)
+            left: 10px
+    .three7
+        width: 0px
+        height: 0px
+        position: relative
+        top: -393px
+        right: -53%
+        z-index: 0
+        .m
+            display: none
+
+        @media (max-width: 1230px)
+            right: -59%
+            top: -320px
+            img
+                width: 320px
+
+        @media (max-width: 950px)
+            position: absolute
+            right: 220px
+            top: 320px
+            img
+                width: 220px
+            .m
+                display: block
+            .pc
+                display: none
+
+        @media (max-width: 450px)
+            top: 400px
+
     .container_inner
         width: 60%
         text-align: center
+        z-index: 1
+        position: relative
+        @media (max-width: 950px)
+            width: 100%
+
         h1
             font-weight: 800
             font-size: 86px
@@ -105,11 +182,18 @@ nav
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
             .marked
                 color: rgba(20, 199, 255, 1)
-        h2
+            @media (max-width: 600px)
+                font-size: 36px
+                line-height: 31px
 
+        h2
             font-weight: 500
             font-size: 52px
             line-height: 52px
+            @media (max-width: 600px)
+                margin-top: 10px
+                font-size: 16px
+                line-height: 16px
         p
             width: 70%
             margin: 0px auto
@@ -117,6 +201,13 @@ nav
             font-weight: 400
             font-size: 24px
             line-height: 29px
+            text-shadow: 0px 0px 10px black
+
+            @media (max-width: 1230px)
+                width: 100%
+            @media (max-width: 600px)
+                font-size: 16px
+                line-height: 29px
         button
             margin-top: 30px
         .p18
@@ -135,14 +226,124 @@ nav
                 font-weight: 400
                 font-size: 15px
                 line-height: 20px
+                text-shadow: 0px 0px 10px black
                 color: rgba(255, 255, 255, 0.5)
 
 .information
     margin-top: 50px
     background-color: rgba(63, 90, 185, 0.56)
     padding: 60px 0px
+    @media (max-width: 600px)
+        padding: 30px 0px
     p
         text-align: center
         font-weight: 400
         font-size: 24px
         line-height: 32px
+        @media (max-width: 600px)
+            font-size: 10px
+            line-height: 14px
+.advant
+    width: 1200px
+    margin: 0 auto
+    margin-top: 80px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    @media (max-width: 1300px)
+        width: 100%
+        padding: 0px 20px
+    @media (max-width: 700px)
+        margin-top: 10px
+
+    &_element
+        width: 340px
+        background-color: rgba(1, 22, 41, 0.45)
+        backdrop-filter: blur(11px)
+        border-radius: 6px
+        text-align: center
+        @media (max-width: 1300px)
+            width: 32%
+        @media (max-width: 700px)
+            width: 100%
+            margin-top: 80px
+        .img
+            height: 0px
+            position: relative
+            left: 3%
+            width: 100%
+            top: -67px
+        h2
+            margin-top: 60px
+            font-weight: 700
+            font-size: 32px
+            line-height: 31px
+            color: #14C7FF
+        p
+            padding: 30px 20px
+            font-weight: 400
+            font-size: 16px
+            line-height: 17px
+.solo_btn_wrapper
+    margin-top: 60px
+    text-align: center
+    .play_btn
+        box-shadow: 0px 0px 50px 30px rgba(36, 52, 107, .8)
+    .play_btn:hover
+        box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, .3)
+
+.footer
+    margin-top: 80px
+    nav
+        margin-bottom: 15px
+        background-color: rgba(63, 90, 185, 0.56)
+        padding: 30px 0px
+        .container
+            .links
+                margin: auto 0px
+                display: flex
+                flex-wrap: wrap
+                column-gap: 50px
+                @media (max-width: 700px)
+                    margin: 0px
+                    margin-top: 20px
+                    justify-content: center
+                    width: 100%
+                a
+                    font-weight: 400
+                    font-size: 15px
+                    transition: .3s
+                    text-decoration: none
+                a:hover
+                    color: lightgray
+    p
+        padding: 15px 40px
+        font-family: 'Inter'
+        font-weight: 500
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        color: rgba(255, 255, 255, 0.3)
+        @media (max-width: 600px)
+            padding: 15px
+            font-size: 8px
+            line-height: 17px
+    .p18
+        margin-top: 15px
+        margin-bottom: 30px
+        display: flex
+        flex-wrap: nowrap
+        padding: 0px 10px
+        justify-content: center
+        column-gap: 20px
+        img
+            width: 40px
+            height: 40px
+        p
+            color: white
+            font-family: 'Inter'
+            font-style: normal
+            font-weight: 400
+            font-size: 13px
+            padding: 0
+            margin: auto 0
